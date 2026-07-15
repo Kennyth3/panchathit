@@ -1,9 +1,9 @@
-import productform from "@/components/productform";
+import ProductForm from "@/components/ProductForm";
 
-export default function productpage() {
+export default function AdminProductsPage() {
   return (
-    <div>
-        Enter
-    </div>
+    <main className="p-6">
+      <ProductForm />
+    </main>
   );
 }

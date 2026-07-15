@@ -75,7 +75,7 @@ export default function Navbar() {
              </li>
 
              <li>
-              <Link href="/admin/categories">category</Link>
+              <Link href="/admin/categories">Category</Link>
              </li>
 
              <li>
