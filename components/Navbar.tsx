@@ -82,6 +82,9 @@ export default function Navbar() {
               <Link href="/admin/products">Product</Link>
              </li>
 
+              <li>
+              <Link href="/admin/blogs">Blog</Link>
+             </li>
 
             </>
           )}

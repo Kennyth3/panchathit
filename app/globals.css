@@ -259,7 +259,60 @@ c
   cursor: pointer;
 }
 
-.pro-card a {
+.blog-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.blog-page {
+  min-height: calc(150vh - 190px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  width: 560px;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blog-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.blog-card textarea{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.blog-card button {
+  width: 100%;
+  padding: 12px;
+  background: #929fbc;
+  color: rgb(47, 20, 20);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.blog-card a {
   color: #2563eb;
   text-decoration: none;
 }
