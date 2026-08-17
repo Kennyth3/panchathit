@@ -15,7 +15,7 @@ export async function GET() {
       blogs,
     });
   } catch (error) {
-    console.error("GET categories error:", error);
+    console.error("GET blogs error:", error);
 
     return NextResponse.json(
       { message: "ไม่สามารถโหลดข้อมูลได้" },
@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     const slug = String(body.slug ?? "")
       .trim()
       .toLowerCase();
-    const description = String(body.description ?? "").trim();
+    const description = String(body.content ?? "").trim();
 
     if (!title || !slug) {
       return NextResponse.json(
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const blogs = await Blog.create({
+    const blog = await Blog.create({
       title,
       slug,
       description,
