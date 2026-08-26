@@ -1,9 +1,10 @@
+import BlogCard from "@/components/BlogCard";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      welcome in
+    <div className="container">
+      <BlogCard/>
     </div>
   );
 }
