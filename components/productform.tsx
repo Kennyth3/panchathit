@@ -295,7 +295,11 @@ export default function ProductForm() {
         {form.imageUrl && (
           <div className="space-y-2">
             <div className="relative h-64 w-full overflow-hidden rounded-lg border">
-              <Image src={form.imageUrl} alt={form.name || "ตัวอย่างรูปสินค้า"} fill sizes="(max-width: 768px) 100vw, 672px" className="object-contain" />
+              <img 
+                src={form.imageUrl} 
+                alt={form.name || "ตัวอย่างรูปสินค้า"} 
+                className="h-64 w-full object-cover rounded-lg border"
+              />
             </div>
             <button type="button" onClick={removeImage} className="text-sm underline" disabled={disabled}>เปลี่ยนรูปสินค้า</button>
           </div>
